@@ -1,22 +1,7 @@
 import java.util.Scanner;
 import javafx.scene.control.ListView;
 
-public class GettersSetters {
-        public static void main(String[] args){
-        String livro;
-        Livro usuario = new Livro();
-        Scanner texto = new Scanner(System.in);
 
-            System.out.println("Qual livro deseja pegar de nossa biblioteca?");
-            System.out.println("temos os livros: Mengão do meu coração: O Inesquecível Bicampeonato da Libertadores - 2019.");
-            System.out.println("Ainda estou aqui.");
-            System.out.println("Drácula.");
-            livro = texto.nextLine();
-
-            usuario.Setlivro(livro);
-            usuario.mostralivro();
-        }
-}
 public class App {
         public static void main(String[] args){
                 String livro;
@@ -24,18 +9,18 @@ public class App {
                 Scanner texto = new Scanner(System.in);
         
                     System.out.println("Qual livro deseja pegar de nossa biblioteca?");
-                    System.out.println("temos os livros: Mengão do meu coração: O Inesquecível Bicampeonato da Libertadores - 2019.");
+                    System.out.println("temos os livros: Mengao do meu coraçao: O Inesquecivel Bicampeonato da Libertadores - 2019.");
                     System.out.println("Ainda estou aqui.");
-                    System.out.println("Drácula.");
+                    System.out.println("Dracula.");
                     livro = texto.nextLine();
         
                     usuario.Setlivro(livro);
-                    usuario.mostralivro();
+                    
                 
             Livro c1 = new Livro();
         
             c1.Quantidade = 20;
-            c1.Título = "Mengão do meu coração: O Inesquecível Bicampeonato da Libertadores - 2019.";
+            c1.Título = "Mengao do meu coraçao: O Inesquecivel Bicampeonato da Libertadores - 2019.";
             c1.Autor = "Marcia Ghelman";
             c1.código = 657463;
             c1.status();
@@ -53,10 +38,12 @@ public class App {
             Livro c3 = new Livro();
     
             c3.Quantidade = 8;
-            c3.Título = "Drácula.";
+            c3.Título = "Dracula.";
             c3.Autor = "Bram Stoker.";
             c3.código = 657461;
             c3.status();
             c3.Emprestar();
+
+            usuario.mostralivro();
     }
     }
