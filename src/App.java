@@ -7,10 +7,10 @@ public class App {
                 Livro usuario = new Livro();
                 Scanner texto = new Scanner(System.in);
         
-                    System.out.println("Qual livro deseja pegar de nossa biblioteca?");
                     System.out.println("temos os livros: Mengao do meu coraçao: O Inesquecivel Bicampeonato da Libertadores - 2019.");
                     System.out.println("Ainda estou aqui.");
                     System.out.println("Dracula.");
+                    System.out.println("Qual livro deseja pegar de nossa biblioteca?");
                     livro = texto.nextLine();
         
                     usuario.Setlivro(livro);
