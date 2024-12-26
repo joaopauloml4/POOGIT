@@ -3,19 +3,34 @@ import java.util.Scanner;
 
 public class App {
         public static void main(String[] args){
+                int livro12;
                 String livro;
                 Livro usuario = new Livro();
                 Scanner texto = new Scanner(System.in);
         
-                    System.out.println("temos os livros: Mengao do meu coraçao: O Inesquecivel Bicampeonato da Libertadores - 2019.");
-                    System.out.println("Ainda estou aqui.");
-                    System.out.println("Dracula.");
+                    System.out.println("Temos os livros:");
+                    System.out.println("1 - Mengao do meu coraçao: O Inesquecivel Bicampeonato da Libertadores - 2019.");
+                    System.out.println("2 - Ainda estou aqui.");
+                    System.out.println("3 - Dracula.");
                     System.out.println("Qual livro deseja pegar de nossa biblioteca?");
-                    livro = texto.nextLine();
-        
-                    usuario.Setlivro(livro);
+                    livro12 = texto.nextInt();
+                    switch (livro12) {
+                      case 1:
+                        usuario.Setlivro(livro="Mengao do meu coraçao: O Inesquecivel Bicampeonato da Libertadores - 2019.");
+                        usuario.Setlivro(livro);
+                        break;
+                      case 2:
+                        usuario.Setlivro(livro="Ainda estou aqui.");
+                        usuario.Setlivro(livro);
+                        break;
+                      case 3:
+                        usuario.Setlivro(livro="Dracula.");
+                        usuario.Setlivro(livro);
+                        break;
+                    }   
                     
-                
+                        
+                    
             Livro c1 = new Livro();
         
             c1.Quantidade = 20;

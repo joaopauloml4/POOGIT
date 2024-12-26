@@ -23,9 +23,9 @@ public class Livro {
         System.out.println("");
     }
     void status(){
-        System.out.println("o título do livro é: " + this.Título + " do autor: " + this.Autor);
+        System.out.println("o titulo do livro é: " + this.Título + " do autor: " + this.Autor);
         System.out.println("Tem " + this.Quantidade + " livros disponíveis.");
-        System.out.println("Seu código é: " + this.código);
+        System.out.println("Seu codigo: " + this.código);
     }
     public void Setlivro(String seulivro){
         livro = seulivro;
